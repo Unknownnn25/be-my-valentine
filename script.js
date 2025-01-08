@@ -27,10 +27,21 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! :3";
+  titleElement.innerHTML = `
+    Yeyyy!! <3
+    <br>
+    <span style="font-size: 0.4em;">
+      Please click the link below for the invitation <3<br>
+      <a href="https://www.canva.com/design/DAGbkrKXRsQ/q0tsRqtJhBZLPFzdV5pVOA/view?utlId=h45ec4de756" target="_blank" style="color: blue; text-decoration: underline;">
+        Invitation Link
+      </a>
+    </span>
+  `;
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
+
+
 
 function resizeYesButton() {
   const computedStyle = window.getComputedStyle(yesButton);
@@ -44,8 +55,8 @@ function generateMessage(noCount) {
   const messages = [
     "No",
     "Are you sure?",
-    "Pookie please",
-    "Don't do this to me :(",
+    "Please :((",
+    "Don't do this to me :((",
     "You're breaking my heart",
     "I'm gonna cry...",
   ];
